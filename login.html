@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<style type="text/css">
+		div#container{
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+
+    border-width: 5px;
+     font-size: 300%;
+}
+.button {
+
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    background-color: black;
+    color:white;
+
+}
+.input{
+		height:40px;
+		width:300px;
+}
+header{
+
+    	padding: 15px;
+    	color: white;
+    	background-color: black;
+    	font-size:40px;
+    	text-align:center;
+    	}
+	</style>
+</head>
+	<body>
+		<header>
+			LOGIN
+		</header>
+
+		<br><br><br><br><br><br><br><br><br>
+	<div id="container"align="center">
+		<form method="GET" action="login.php">
+
+		<label for="username">Username/Email:</label>
+		<input type="text" id = "uname" name="username" required autofocus class="input">
+		<br/><br/>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required class="input">
+		<br>
+		<br>
+		<input type="image" alt="submit" src="images.jpeg" onclick = "save()" value="Login"width="150" height="80">
+		<!--<input type="submit" onclick = "save()" value="Login">-->
+		</form>
+	</form>
+	<form>
+		<br>
+<input type="button" onclick="parent.location='create.html'" class="button" value="CREATE ACCOUNT">
+</form>
+		<script>
+		function save(){
+				
+					sessionStorage.setItem("username",document.getElementById('uname').value);
+				
+				}
+		</script>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NEWS BLOG:-</title>
+	<style>
+		header{
+		background-color: 808080;
+    	padding: 15px;
+    	color: white;
+    	background-color: black;
+    	font-size:40px;
+    	text-align:center;
+    	}
+    	footer{
+    	padding: 1px;
+    	color: white;
+    	background-color: black;
+    	font-size:15px;
+    	text-align:left;
+    	}
+
+    	.dropbtn {
+    	background-color: #4CAF50;
+    	color: white;
+    	padding: 16px;
+    	font-size: 16px;
+    	border-width: 2px;
+}
+
+
+		.dropdown-content {
+	    display: none;
+   		 position: absolute;
+    	background-color: #f1f1f1;
+    	min-width: 160px;
+
+}
+
+		.dropdown-content a {
+
+    	color: black;
+    	padding: 12px;
+    	text-decoration: none;
+    	display: block;
+}
+div#content {
+    margin: 5px;
+    padding: 10px;
+
+    background-color:white;
+;
+}
+
+div.article {
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border:solid;
+    border-width: 5px;
+
+}
+h2#h2_1{
+	color: white;
+	font-size:30px;
+	font-style:Serif;
+}
+h2#h2_2{
+	color: white;
+	font-size:30px;
+	font-style:Serif;
+}
+h2#h2_3{
+	color: white;
+	font-size:30px;
+	font-style:Serif;
+}
+div.division{
+	background-color: rgb(128,0,0);
+	margin: 10px;
+	border: solid;
+	padding: 10px;
+}
+.dropdown-content a:hover {background-color: #fff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	</style>
+</head>
+<body>
+<header>
+	NEWS BLOG:-
+</header>
+<div id="content">
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn"><a href="#h2_1">National</a></button>
+  <div class="dropdown-content">
+    <a href="utl1.html">Delhi</a>
+    <a href="utl2.html">Mumbai</a>
+
+  </div>
+</div>
+
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn"><a href="#h2_2">International</a></button>
+  <div class="dropdown-content">
+    <a href="utl3.html">China</a>
+    <a href="utl4.html">US</a>
+    <a href="utl5.html">Malaysian</a>
+  </div>
+</div>
+<div class="dropdown" style="float:left;">
+  <button class="dropbtn"><a href="#h2_3">Sports</a></button>
+  <div class="dropdown-content">
+    <a href="utl6.html">cricket</a>
+    <a href="utl7.html">Football</a>
+    <a href="utl8.html">Tennis</a>
+
+  </div>
+</div>
+
+<div class = "button" align="right" id = "log">
+	<p id = "ss"><input type = "button" onclick="parent.location = 'login.html'" value = "Login">
+	<br>
+	<br>
+	<a href="create.html">Create a new Account</a></p>
+	</div>
+	<script>
+		if(sessionStorage.getItem('username')!=null){
+			//document.getElementById('ss').value = '';
+			document.getElementById('ss').innerHTML = "hi! "+sessionStorage.getItem('username');
+			var btn = document.createElement("button");
+			btn.onclick = function logout(){
+	    
+	    sessionStorage.removeItem('username');
+	    window.location.replace("web.htm");
+	  };
+
+			var text = document.createTextNode("logout");
+			btn.appendChild(text);
+			document.getElementById('log').appendChild(btn);
+
+		}
+	</script>
+	<br>
+
+<div class="division">
+<h2 id="h2_1">National:-</h2>
+<div class="article">
+<h2><a href="untitled.html">They want to kill me: Kejriwal, day after chilli attack at Delhi Secretariat </a></h2>
+  <p>NEW DELHI:A day after he was attacked with chilli powder by a man inside the Delhi Secretariat, Chief Minister Arvind Kejriwal Wednesday said forces inimical to the AAP’s growth want him gone.
+Advertising
+
+Speaking to reporters in Haryana, Kejriwal said it was not a small matter that there have been four attacks on him in the last two years. While he did not name anyone, in Delhi, Deputy Chief Minister Manish Sisodia alleged the BJP was conspiring to kill the AAP chief. </p>
+
+</div>
+<div class="article">
+<h2><a href="untitled1.html"> Chilli attack on Delhi CM: Accused’s FB profile tells a tale of contradictions</a>
+</h2>
+  <p>In his purported Facebook profile, Anil Kumar Sharma, who allegedly assaulted Delhi Chief Minister Arvind Kejriwal Tuesday, identifies himself as a “BJP worker”. His timeline is also replete with posts praising the Congress, though of late, he has been critical of the party. In several posts this month, Sharma has also used abusive words against Kejriwal and his deputy Manish Sisodia.</p>
+
+</div>
+<div class="article">
+<h2><a href="untitled2.html">Shortage of Highway Police personnel cripples efforts to enforce rules on Pune-Mumbai Expressway</a></h2>
+  <p>Last week, SHP officials held a meeting that was also attended by police personnel from Pune, Raigad and Navi Mumbai, officials from the Maharashtra State Road Development Corporation and IRB Infrastructure. The meeting was attended by office-bearers of SaveLIFE Foundation, which is working towards reducing fatalities on the Expressway, as well as independent researcher Tanmay Pendse.</p>
+</div>
+</div>
+
+
+
+
+
+
+<div class="division">
+<h2 id="h2_2">InterNational:-</h2>
+<div class="article">
+<h2><a href="untitled3.html">Chain reaction caused fiery crash on Brooklyn Bridge: Police</a></h2>
+  <p>The fiery 7 a.m. crash on the Brooklyn-bound side of the bridge sent a column of black smoke rising above the landmark span. Motorists blocked by the wreck got out their cars to watch a swarm of firefighters work to extinguish the blaze.
+
+Police identified the victim who died as Kristopher Hambas, 32, of Scarsdale, New York. Six people were injured, including two who were hospitalized with non-life threatening injuries. The others refused medical attention.</p>
+</div>
+<div class="article">
+<h2><a href="untitled4.html">Oldest US military survivor of Pearl Harbour dies at age 106 </a></h2>
+  <p>As recently as last May he had traveled to Washington DC, where he was honored on Memorial Day by President Donald Trump. The White House Tweeted a statement Wednesday saying it was saddened to hear of his passing.
+
+    We are saddened to hear the oldest living Pearl Harbor veteran, Ray Chavez, has passed away at the age of 106</p>
+
+</div>
+<div class="article">
+<h2><a href="untitled5.html">Malaysian First Lady had a special request for Imran Khan </a></h2>
+  <p>Pakistani Prime Minister Imran Khan has a new fan. During his two-day visit to Malaysia, First Lady Siti Hasmah Mohamad Ali had a request for him. “Prime minister, can I hold your hand?” the nonagenarian asked at an official photo-op.
+
+“Sure,” the cricketer-turned-politician replied with a smile, prompting laughter from those in the audience, and from his counterpart Prime Minister Mahathir Mohamad.
+
+</p>
+</div>
+</div>
+
+
+
+
+<div class="division">
+<h2 id="h2_3">Sports:-</h2>
+<div class="article">
+<h2><a href="untitled8.html">I fear about quitting cricket: Wasim Jaffer after crossing 11000-run mark in Ranji Trophy </a></h2>
+  <p>Wasim Jaffer on Wednesday became the first batsman to reach the 11000-run mark in Ranji Trophy history. The veteran batsman, who shifted his base from Mumbai to Vidarbha few seasons ago, slammed 153 against Baroda at the VCA Stadium in Nagpur. He spoke to The Indian Express about his landmark milestone, and why he is afraid to quit cricket at this moment.
+</p>
+</div>
+<div class="article">
+<h2><a href="untitled6.html">France seek rare repeat in ‘last’ Davis Cup final against Croatia </a> </h2>
+  <p>This year’s final will be the last in its current guise after the International Tennis Federation’s decision to revamp the team event starting in 2019.
+
+It has not been a pain-free process and fans and players alike will lament the scrapping of the ‘home and away’ format which has been such an integral part of the Davis Cup’s charm.</p>
+
+</div>
+<div class="article">
+<h2><a href="untitled7.html">Former Chelsea striker Didier Drogba announces retirement at 40 </a> </h2>
+  <p>Former Chelsea striker Didier Drogba announced his retirement on Wednesday, calling time on a 20-year career in which the bullish centre forward won four Premier League titles and the 2012 Champions League.
+
+</p>
+</div>
+</div>
+</div>
+</body>
+<footer>
+<p>&copy; 2018 Times of India. All rights reserved.</p>
+</footer>
+</body>
+</html>

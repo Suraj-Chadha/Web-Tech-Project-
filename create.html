@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create Your Account</title>
+	<style type="text/css">
+		#submit {
+    width:125px;
+    margin-left:auto;
+    margin-right:auto;
+}
+div#container{
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    
+    border-width: 5px;
+     font-size: 200%;
+
+}
+.input{
+		height:20px
+}
+#submit {
+    width: 5em;  height: 1.5em;
+    font-size : 35px;
+    color:white;
+    background-color: black;
+}
+header{
+    	padding: 15px;
+    	color: white;
+    	background-color: black;
+    	font-size:40px;
+    	text-align:center;
+    	}
+	</style>
+</head>
+<body>
+	<header>
+		CREATE ACCOUNT
+	</header>
+	<div id=container  align="center">
+		<br><br><br><br>
+	<form action = "create.php" method = "POST">
+		First Name:<input type = "text" name = "firstname"class="input" autofocus required><br><br>
+		Last Name:<input type = "text" name = "lastname" class="input"required><br><br>
+		Email Id:<input type = "Email" name ="Email" class="input" pattern = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" required><br><br>
+		Date Of Birth:<input type = "Date" name = "DOB" class="input"><br><br>
+		Password:<input type = "Password" name = "Password" id = "password"class="input" required><br><br>
+		ReEnter your Password:<input type = "Password" id = "confirm_password" class="input" required><br><br>
+		<script type="text/javascript">
+			var pswd = document.getElementById("password");
+			var confpswd = document.getElementById("confirm_password");
+			function pswdmatch(){
+				if(pswd.value != confpswd.value){
+					confpswd.setCustomValidity("password didn't match");
+				}
+				else{
+					confpswd.setCustomValidity('');
+				}
+			}
+			pswd.onchange = pswdmatch;
+			confpswd.onchange = pswdmatch;
+		</script>
+		Enter Recovery PIN:<input type = "number" name = "pin" class="input"><br><br>
+		<input type = "submit" value = "sign up!" id = "submit"height="80px">
+	</form>
+</div>
+</body>
+</html>
